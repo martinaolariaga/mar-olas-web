@@ -183,7 +183,7 @@ color: rgb(52, 140, 240)
 .display-4{
    letter-spacing: 5px;
    margin-bottom: 5px;
-   background-image: url(img/fondoagua.png);
+   background-image: url(../img/fondoagua.png);
    background-size: cover;
    background-position: center;
    font-size: 60px;
