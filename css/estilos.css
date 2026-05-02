@@ -57,19 +57,41 @@ body {
        CARDS DE INDEX
    ========================================== */
 .category-card{
+   display: flex;
+   flex-direction: column;
+   height: 100%;
    border-radius: 30px;
    overflow:hidden;
    cursor: pointer;
 }
-
+.category-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    flex-grow: 1; 
+    padding: 10px !important;
+}
 .category-card img{
    width: 100%;
    height: 100%;
    transition: transform 0.3s ease;
+   object-fit: cover;
+   display: block;
+}
+.category-card .card-title {
+    margin-bottom: auto;
+    font-size: 0.8rem; 
 }
 
 .category-card h3 {
     margin-top: 10px; 
+}
+
+.custom-card-img {
+    height: 250px; 
+    object-fit: cover;
+    width: 100%;
+    display: block;
 }
 
 .category-card:hover img{
@@ -77,25 +99,26 @@ body {
    transform: translateY(-10px)
 }
 
-.btn-vermas{
-   text-decoration: none;
-   background-color: #053b4b;
-  color: black;
-  font-weight: bold;
-  width: 80px;
-  height: 30px;
-  display: flex;
-  align-items:center;
-  justify-content: center;
-  border: 1px solid black;
-  border-radius: 15px;
-  transition: all 0.3s ease;
+.boton-cards{
+   background-color: #f8f9fa;
+   color: #0dcaf0;
+   transition: 0.3s;
+}
 
+.boton-cards:hover{
+   background-color: #085a73;
+   color: white;
+   transform: translateY(5px);
+}
+
+.card-body.bg-info {
+    margin-top: -1px;
 }
 
 #lineadeproductos{
    font-size: 6vh;
    font-family: century gothic, sans-serif;
+   
 }
 /* ==========================================
        NOSOTROS
@@ -313,15 +336,34 @@ color: rgb(52, 140, 240)
    .social-links a {
       display: inline-block;
       margin: 10px;
+   }   
+    .card-body.bg-info {
+        padding: 10px !important;
+    }
+    .category-card img {
+        height: 180px !important; 
+        object-fit: cover;
+    }
+    .card-body h3 {
+        font-size: 1rem; 
+        margin: 0;
+    }
+
+    .boton-cards {
+        padding: 5px 15px;
+        font-size: 0.9rem; 
+        margin-top: 5px !important;
+    }
+
+    .custom-card-img {
+        height: 140px; 
+        object-fit: cover;
+    }
+    
    }
-   
    @media (max-width: 480px){
       .hero-bootstrap{
          font-size: 32px;
       }
-      .btn-vermas{
-         width:100%;
-      }
+     
    }
-
-}
