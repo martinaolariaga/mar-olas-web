@@ -1,0 +1,31 @@
+
+@mixin flex-centro($direction: row, $justify: center, $align: center) {
+   display: flex;
+   flex-direction: $direction;
+   justify-content: $justify;
+   align-items: $align;
+}
+
+//Transiciones y animaciones suaves
+@mixin transicion($tiempo: 0.3s) {
+   transition: all $tiempo ease;
+}
+
+// Botones
+@mixin boton-estilo($bg, $color, $bg-hover, $color-hover) {
+   background-color: $bg;
+   color: $color;
+   transition: all 0.3s ease; // Le puse la propiedad directa para evitar errores de anidación
+   
+   &:hover {
+      background-color: $bg-hover;
+      color: $color-hover;
+   }
+}
+
+//Fondos con imágenes
+@mixin fondo-imagen($url) {
+   background-image: url($url);
+   background-size: cover;
+   background-position: center;
+}

@@ -1,0 +1,15 @@
+@use "../utilities/variables" as *;
+
+
+.pregunta{
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pregunta:hover{
+   transform: translateX(20px);
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);;
+}
+
+.pregunta h3{
+   color: $color-mar-olas;
+   font-size: 1.25rem;
+}

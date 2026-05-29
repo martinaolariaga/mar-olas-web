@@ -1,0 +1,80 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+
+@media (max-width: 768px){
+
+   .hero-bootstrap {
+   font-size: 45px;
+   letter-spacing: 2px;
+   min-height: 50vh;
+   }
+
+   #lineadeproductos{
+      font-size: 30px;
+      text-align: center;
+   }
+
+   .display-4{
+      font-size: 35px;
+   }
+
+   .nosotros{
+      height: auto;
+      text-align: center;
+   }
+
+   .category-card{
+      height: 250px;
+      margin-bottom: 20px;
+   }
+
+   .card-img-top{
+      height: 200px;
+   }
+
+   .footer-content{
+      flex-direction: column;
+      text-align: center;
+   }
+
+   .footer-section{
+      margin-bottom: 30px;
+      border-bottom: 1px solid rgba (255, 255, 255, 0.1);
+      padding-bottom: 20px;
+   }
+
+   .social-links a {
+      display: inline-block;
+      margin: 10px;
+   }   
+    .card-body.bg-info {
+        padding: 10px !important;
+    }
+    .category-card img {
+        height: 180px !important; 
+        object-fit: cover;
+    }
+    .card-body h3 {
+        font-size: 1rem; 
+        margin: 0;
+    }
+
+    .boton-cards {
+        padding: 5px 15px;
+        font-size: 0.9rem; 
+        margin-top: 5px !important;
+    }
+
+    .custom-card-img {
+        height: 140px; 
+        object-fit: cover;
+    }
+    
+   }
+   @media (max-width: 480px){
+      .hero-bootstrap{
+         font-size: 32px;
+      }
+     
+   }

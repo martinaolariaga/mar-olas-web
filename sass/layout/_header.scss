@@ -1,0 +1,15 @@
+@use "../utilities/variables" as *;
+
+
+.bg-info{
+    background-color: $color-mar-olas !important; 
+}
+
+.nav-link {
+    color: white;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color:$color-cyan-glow; 
+}

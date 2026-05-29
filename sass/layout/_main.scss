@@ -1,0 +1,67 @@
+@use "../utilities/variables" as *;
+
+
+/* ==========================================
+            BODY
+   ========================================== */
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    
+    width: 100%;
+    padding: 0;
+    overflow-x: hidden; 
+    overflow-y: auto;
+}
+
+/* ==========================================
+            HERO
+   ========================================== */
+.hero-bootstrap{
+   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/fondoagua.png');
+   background-size: cover;
+   background-position: center;
+   min-height: 80vh;
+   color:#f0f9ff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   font-size: 120px;
+   letter-spacing: 5px;
+   text-transform: uppercase;
+}
+
+/* ==========================================
+       NOSOTROS
+   ========================================== */
+.nosotros{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 40vh;
+   background-image: url(/img/ct.png.jpeg);
+   background-size: cover;
+   background-position: center;
+   position: relative;
+}
+
+.nosotros h2{
+   font-size: 40px;
+   text-align: left;
+}
+.nosotros ::before{
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.4);
+   top: 0;
+   left: 0;
+   z-index: 1;
+}
+.contenido-nosotros{
+   z-index: 2;
+}

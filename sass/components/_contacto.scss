@@ -1,0 +1,35 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+   .form-control{
+      border: 1px solid $color-mar-olas;
+      padding: 12px;
+      transition: all 0.3s ease;
+   }
+
+   .form-control:focus{
+      border-color: $color-mar-olas;
+      box-shadow: 0 0 0 0.25rem rgba(11, 115, 146, 0.25);
+   }
+
+   .btn-info{
+   background-color: $color-mar-olas !important;
+   color: #ffffff;
+   border: none;
+   padding: 12px;
+   display:incline-block; 
+   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease;
+   
+}
+
+.btn-info:hover {
+    background-color: $color-cyan-glow !important; 
+    transform: scale(1.18);
+}
+
+
+.border-info {
+    border-color: $color-mar-olas !important; 
+    background-color: #ffffff;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
