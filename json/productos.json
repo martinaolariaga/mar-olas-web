@@ -1,0 +1,74 @@
+[
+  { 
+    "id": 1, 
+    "nombre": "Musculosa Masculina", 
+    "precio": 40000, 
+    "categoria": "hombres", 
+    "img": "../img/musculosa-hombre.png",
+    "descripcion": "Confeccionada en algodón de alta resistencia. Disponible en talles S, M, L, XL y XXL."
+  },
+  { 
+    "id": 2, 
+    "nombre": "Short Masculino", 
+    "precio": 25000, 
+    "categoria": "hombres", 
+    "img": "../img/short-hombre.png",
+    "descripcion": "Secado rápido con elástico reforzado. Disponible en talles S, M, L, XL y XXL."
+  },
+  { 
+    "id": 3, 
+    "nombre": "Buzo Masculino", 
+    "precio": 60000, 
+    "categoria": "hombres", 
+    "img": "../img/buzo.png",
+    "descripcion": "Friza pesada ideal para guardia nocturna. Disponible en talles M, L, XL y XXL."
+  },
+  { 
+    "id": 4, 
+    "nombre": "Remera Femenina", 
+    "precio": 40000, 
+    "categoria": "mujeres", 
+    "img": "../img/remera-mujer.png",
+    "descripcion": "Algodón peinado con estampa reflectiva. Disponible en talles XS, S, M, L y XL."
+  },
+  { 
+    "id": 5, 
+    "nombre": "Short Femenino", 
+    "precio": 25000, 
+    "categoria": "mujeres", 
+    "img": "../img/short-mujer.png",
+    "descripcion": "Corte anatómico de secado veloz. Disponible en talles XS, S, M, L y XL."
+  },
+  { 
+    "id": 6, 
+    "nombre": "Buzo Unisex", 
+    "precio": 60000, 
+    "categoria": "mujeres", 
+    "img": "../img/buzo-unisex.png",
+    "descripcion": "Friza abrigo medio con capucha. Disponible en talles S, M, L, XL y XXL."
+  },
+  { 
+    "id": 7, 
+    "nombre": "Silbato Profesional", 
+    "precio": 20000, 
+    "categoria": "accesorios", 
+    "img": "../img/silbato.png",
+    "descripcion": "Potencia de 115dB con cordón de agarre incluido. Talle único."
+  },
+  { 
+    "id": 8, 
+    "nombre": "Piluso Unisex", 
+    "precio": 10000, 
+    "categoria": "accesorios", 
+    "img": "../img/piluso-hombre.png",
+    "descripcion": "Protección UV50+ con ajuste mentonero. Talle único."
+  },
+  { 
+    "id": 9, 
+    "nombre": "Toalla Albatroz", 
+    "precio": 10000, 
+    "categoria": "accesorios", 
+    "img": "../img/toalla.png",
+    "descripcion": "Microfibra ultra absorbente de compacto rápido. Medida 140x70 cm."
+  }
+]
