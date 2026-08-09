@@ -33,35 +33,91 @@
 </nav>
 
 <!--CONTACTO-->
-<main class="container my-5 py-5">
-  <div class="row g-5 "> 
-    <div class="col-md-6">
-     <h2 class="fw-bold mb-4 text-center" style="color:#0b7392;">Envianos un mensaje</h2>
-     <form class="p-4 bg-light rounded shadow-sm">
-        <div class="mb-3">
-         <label class="form-label">Nombre completo</label>
-         <input type="text" class="form-control" placeholder="Escirbí tu nombre">
+<section class="py-5 bg-light">
+    <div class="container my-4">
+        <!-- Título principal -->
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-dark display-6">Ponete en Contacto 🌊</h2>
+            <p class="text-muted fs-5">¿Tenés alguna duda o consulta sobre nuestros productos? ¡Escribinos!</p>
         </div>
-        <div class="mb-3">
-            <label class="form-label">Correo electrónico</label>
-            <input type="text" class="form-control" placeholder="nombre@ejemplo">
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Mensaje</label>
-            <textarea class="form-control" rows="4" placeholder="¿En qué podemos ayudarte?"></textarea>
-    </div>
-         <button type="submit" class="btn btn-info text-white w-100 fw-bold">ENVIAR</button>
-     </form>
-  </div>
 
-  <div class="col-md-6 d-flex flex-column justify-content-center">
-    <div class="p-4 border-start border-4 border-info">
-         <h2 class="fw-bold mb-4" style="color: #0b7392;">Otras formas de contacto</h2>
-         <p class="mb-3"><strong>📍 Ubicación:</strong> Villa Gesell, Buenos Aires.</p>
-                    <p class="mb-3"><strong>📧 Email:</strong> marolas@safewaters.com</p>
-                    <p class="mb-3"><strong>📱 WhatsApp:</strong> +54 2255 603139</p>
-        <hr>
-         <p class="text-muted small italic">Atendemos consultas todos los días</p>
+        <div class="row g-4 justify-content-center align-items-stretch">
+            
+            <!-- Columna 1: Info de contacto / Atención -->
+            <div class="col-lg-4">
+                <div class="card border-0 shadow-sm rounded-4 p-4 bg-primary text-white d-flex flex-column justify-content-between" style="background: linear-gradient(135deg, #0dcaf0 0%, #0d6efd 100%);">
+                    <div>
+                        <h3 class="fw-bold h4 mb-4 text-center">Información de Atención</h3>
+                        <p class="mb-4 opacity-90 text-center">Atendemos consultas para guardavidas, escuelas de natación y equipamiento profesional.</p>
+                        
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="fs-4 me-3">📍</span>
+                            <div>
+                                <strong class="d-block">Ubicación</strong>
+                                <small class="opacity-75">Villa Gesell, Argentina</small>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="fs-4 me-3">✉️</span>
+                            <div>
+                                <strong class="d-block">Email</strong>
+                                <small class="opacity-75">marolas@safewaters.com</small>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <span class="fs-4 me-3">⏰</span>
+                            <div>
+                                <strong class="d-block">Horarios</strong>
+                                <small class="opacity-75">Lun a Vie: 09:00 - 18:00 hs</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-top border-white border-opacity-25 mt-4">
+                        <small class="opacity-75">✨ Respuesta promedio en menos de 24 hs.</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna 2: Formulario Interactivo -->
+            <div class="col-lg-6">
+                <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 bg-white">
+                    <form id="form-contacto" novalidate>
+                        
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label fw-bold text-secondary">Nombre Completo</label>
+                            <input type="text" class="form-control form-control-lg rounded-3 fs-6" id="nombre" placeholder="Ej: Maria Perez" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-bold text-secondary">Correo Electrónico</label>
+                            <input type="email" class="form-control form-control-lg rounded-3 fs-6" id="email" placeholder="ejemplo@correo.com" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="asunto" class="form-label fw-bold text-secondary">Asunto</label>
+                            <input type="text" class="form-control form-control-lg rounded-3 fs-6" id="asunto" placeholder="Consulta sobre talles, envíos..." required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="mensaje" class="form-label fw-bold text-secondary">Mensaje</label>
+                            <textarea class="form-control form-control-lg rounded-3 fs-6" id="mensaje" rows="4" placeholder="Escribí tu mensaje aquí..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-info text-white fw-bold btn-lg w-100 rounded-3 shadow-sm transition-all">
+                            Enviar Mensaje 📩
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+        
         </div>
   </div>
   </div>
@@ -98,6 +154,8 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../js/contacto.js"></script>
 </body>
 </html>
 
